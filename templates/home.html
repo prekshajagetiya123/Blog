@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>home</title>
+{% endblock title %}
+
+
+{%block content%}
+
+<h1>this is home.html file</h1>
+    <p>Nothing</p>
+    <p> 
+        {% if bool_item %}
+        random number is {{num}}
+        {% endif  %}
+        </p>>
+        <p>random number is {{num}}</p>
+<p>
+    {% for some_item in some_list  %}
+
+        {{some_item}}
+
+
+    {% endfor  %}
+</p>
+<p>
+    some item is {{some_item}}
+</p>
+
+
+{%endblock content%}
